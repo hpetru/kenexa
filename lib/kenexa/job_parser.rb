@@ -3,10 +3,10 @@ module Kenexa
   class JobParser
 
     QUESTION_MAP = {
-      :title        => 7996,
-      :city         => 15615,
-      :state        => 15616,
-      :internal_id  => 7972,
+      :title        => 1416,
+      :city         => 1414,
+      :work_time    => 1406,
+      :type         => 26644,
     }.freeze
 
     def parse(envelope)

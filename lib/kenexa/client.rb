@@ -4,6 +4,8 @@ require 'open-uri'
 require 'erb'
 require 'date'
 require 'nokogiri'
+require 'pry'
+
 
 module Kenexa
 
@@ -29,6 +31,7 @@ module Kenexa
       # string an parse it with Nokogiri to be able to parse the
       # interesting pieces.
       envelope = Nokogiri::XML doc.children.first.text
+
 
       JobCollectionProxy.new(envelope)
     end
